@@ -15,6 +15,7 @@ public class Solution
 {
     public IList<double> AverageOfLevels(TreeNode root)
     {
+        IList<double> res = new List<double>();
         Queue<TreeNode> queue = new Queue<TreeNode>();
         queue.Enqueue(root);
         while (queue.Count > 0)
